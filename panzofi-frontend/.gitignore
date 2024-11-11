@@ -1,0 +1,24 @@
+# Ignorar archivos de Python
+*.pyc
+*.pyo
+__pycache__/
+db.sqlite3
+
+# Ignorar directorios y archivos de Node.js
+node_modules/
+build/
+
+# Ignorar archivos y directorios de editores
+.vscode/
+.idea/
+
+# Archivos de configuración de sistema
+.DS_Store
+*.log
+
+# Archivos de entorno
+.env
+
+# Otros archivos comunes
+*.bak
+*.tmp
