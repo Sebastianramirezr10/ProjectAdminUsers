@@ -9,7 +9,7 @@ const UserActivityChart = ({ data }) => {
 
   // Preparamos los datos para el gráfico de barras
   const graphData = data.map((activity) => ({
-    username: activity.user?.user_username || 'Usuario desconocido',  // Asegúrate de que `user` y `user_username` estén presentes
+    username: activity.user?.user_username || activity.user_username||'Usuario desconocido',  // Asegúrate de que `user` y `user_username` estén presentes
     button_1: activity.button_1_clicks || 0,  // Previene errores si el valor no existe
     button_2: activity.button_2_clicks || 0,
   }));
